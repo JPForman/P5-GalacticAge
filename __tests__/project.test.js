@@ -29,12 +29,16 @@ describe('GalacticAge', () => {
     let age = new GalacticAge(82);
     expect(age.earthLeft()).toEqual(`You outlived expectations by 2 years`);
   });
-  test('should correctly return time left on Mercury', () => {
+  test('should correctly return time left on Mercury when positive', () => {
+    let age = new GalacticAge(50);
+    expect(age.mercuryLeft()).toEqual(7);
+  });
+  test('should correctly return time left on Mercury when negative', () => {
     let age = new GalacticAge(100);
     expect(age.mercuryLeft()).toEqual(`You outlived expectations by about 5 years`);
   });
-  test('should correctly return time left on Mercury', () => {
+  test('should correctly return time left on Venus when positive', () => {
     let age = new GalacticAge(100);
-    expect(age.mercuryLeft()).toEqual(`You outlived expectations by -4.8 years`);
+    expect(age.venusLeft()).toEqual(`3`);
   });
 });
