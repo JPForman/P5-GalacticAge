@@ -16,7 +16,7 @@ export class GalacticAge {
       return earthLeft;
     }
   }
-
+ 
   mercuryLeft (earthAge) {
     let mercuryLeft = (.24*80) - this.earthAge;
       if (mercuryLeft <= 0) {
