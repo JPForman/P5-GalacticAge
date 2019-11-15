@@ -11,6 +11,14 @@ export class GalacticAge {
   earthLeft (earthAge) {
     let earthLeft = 80 - this.earthAge;
     return earthLeft;
+  }
 
+  mercuryLeft (earthAge) {
+    let earthLeft = (.24*80) - this.earthAge;
+      if (earthLeft <= 0)
+      return `You outlived expectations by ${Math.abs(earthLeft)} years`;
+      else {
+        return earthLeft;
+      }
   }
 }

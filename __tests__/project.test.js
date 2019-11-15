@@ -27,6 +27,6 @@ describe('GalacticAge', () => {
   });
   test('should correctly return time left on Mercury', () => {
     let age = new GalacticAge(100);
-    expect(age.mercuryLeft()).toEqual(30);
+    expect(age.mercuryLeft()).toEqual(80.8);
   });
 });
