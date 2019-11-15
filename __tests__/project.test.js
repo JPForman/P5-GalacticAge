@@ -45,4 +45,8 @@ describe('GalacticAge', () => {
     let age = new GalacticAge(100);
     expect(age.venusLeft()).toEqual("You outlived expectations by about 12 years");
   });
+  test('should correctly return time left on Mars when positive', () => {
+    let age = new GalacticAge(50);
+    expect(age.venusLeft()).toEqual(6);
+  });
 });
