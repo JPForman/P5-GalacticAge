@@ -20,7 +20,7 @@ export class GalacticAge {
   }
 
   mercuryLeft (mercuryAge) {
-    let mercuryLeft = Math.round(19.2 - this.mercuryAge);
+    let mercuryLeft = Math.round((.24*80) - this.mercuryAge);
     if (mercuryLeft <= 0) {
       let mercuryNeg = (-1 * mercuryLeft);
       return "You outlived expectations by about " + mercuryNeg + " years";
@@ -45,6 +45,15 @@ export class GalacticAge {
       return "You outlived expectations by about " + marsNeg + " years";
     } else {
       return marsLeft;
+    }
+  }
+  jupiterLeft (jupiterAge) {
+    let jupiterLeft = Math.round((11.86*80) - this.jupiterAge);
+    if (jupiterLeft <= 0) {
+      let jupiterNeg = (-1 * jupiterLeft);
+      return "You outlived expectations by about " + jupiterNeg + " years";
+    } else {
+      return jupiterLeft;
     }
   }
 }
