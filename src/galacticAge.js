@@ -4,6 +4,6 @@ export class GalacticAge {
     this.earthAge = earthAge;
   }
 
-  
+
 
 }
