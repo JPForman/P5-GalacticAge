@@ -19,11 +19,14 @@ export class GalacticAge {
   }
 
   mercuryLeft (mercuryAge) {
+    // let mercuryLeft = (.24 * 80) - (this.mercuryAge);
+    let mercuryLeft = Math.round(19.2 - this.mercuryAge);
+    console.log(mercuryLeft);
     console.log(this.mercuryAge);
-    let mercuryLeft = (.24*80) - this.mercuryAge;
+    console.log(19.2 - this.mercuryAge);
     if (mercuryLeft <= 0) {
-      let mercuryNeg = Math.abs(mercuryLeft);
-      return "You outlived expectations by " + mercuryNeg + " years";
+      let mercuryNeg = (-1 * mercuryLeft);
+      return "You outlived expectations by about " + mercuryNeg + " years";
     } else {
       return mercuryLeft;
     }
