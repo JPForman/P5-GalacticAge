@@ -23,6 +23,6 @@ describe('GalacticAge', () => {
   });
   test('should correctly return time left on Earth', () => {
     let age = new GalacticAge(50);
-    expect(age.earthLeft).toEqual(2);
+    expect(age.earthLeft()).toEqual(30);
   });
 });

@@ -8,6 +8,9 @@ export class GalacticAge {
     this.jupiterAge = 11.86 * earthAge;
   }
 
+  earthLeft (earthAge) {
+    let earthLeft = 80 - this.earthAge;
+    return earthLeft;
 
   }
 }
