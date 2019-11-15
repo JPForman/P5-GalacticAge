@@ -38,5 +38,13 @@ export class GalacticAge {
       return venusLeft;
     }
   }
-
+  marsLeft (marsAge) {
+    let marsLeft = Math.round((1.88*80) - this.marsAge);
+    if (marsLeft <= 0) {
+      let marsNeg = (-1 * marsLeft);
+      return "You outlived expectations by about " + marsNeg + " years";
+    } else {
+      return marsLeft;
+    }
+  }
 }
