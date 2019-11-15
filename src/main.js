@@ -6,7 +6,7 @@ import './styles.css';
 $(document).ready(function() {
   $("form#ageInput").submit(function(event) {
     event.preventDefault();
-    let ageInput = $(ageInput).val();
+    let ageInput = $("#age").val();
     console.log(ageInput);
   });
 });
