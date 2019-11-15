@@ -5,5 +5,6 @@ export class GalacticAge {
     this.mercuryAge = .24 * earthAge;
     this.venusAge = .62 * earthAge;
     this.marsAge = 1.88 * earthAge;
+    this.jupiterAge = 11.86 * earthAge;
   }
 }

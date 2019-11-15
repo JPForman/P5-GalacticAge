@@ -19,6 +19,6 @@ describe('GalacticAge', () => {
   });
   test('should correctly return Jupiter age', () => {
     let age = new GalacticAge(100);
-    expect(age.jupiterAge).toEqual(188);
+    expect(age.jupiterAge).toEqual(1186);
   });
 });
