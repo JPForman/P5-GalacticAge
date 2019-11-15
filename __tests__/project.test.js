@@ -21,4 +21,8 @@ describe('GalacticAge', () => {
     let age = new GalacticAge(100);
     expect(age.jupiterAge).toEqual(1186);
   });
+  test('should correctly return time left on Earth', () => {
+    let age = new GalacticAge(50);
+    expect(age.earthLeft).toEqual(2);
+  });
 });

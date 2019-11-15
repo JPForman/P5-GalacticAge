@@ -7,4 +7,7 @@ export class GalacticAge {
     this.marsAge = 1.88 * earthAge;
     this.jupiterAge = 11.86 * earthAge;
   }
+
+
+  }
 }
