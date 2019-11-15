@@ -15,6 +15,6 @@ describe('GalacticAge', () => {
   });
   test('should correctly return Mars age', () => {
     let age = new GalacticAge(100);
-    expect(age.marsAge).toEqual(62);
+    expect(age.marsAge).toEqual(188);
   });
 });
