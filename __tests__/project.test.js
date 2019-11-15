@@ -59,6 +59,6 @@ describe('GalacticAge', () => {
   });
   test('should correctly return time left on Jupiter when negative', () => {
     let age = new GalacticAge(100);
-    expect(age.marsLeft()).toEqual("You outlived expectations by about 38 years");
+    expect(age.jupiterLeft()).toEqual("You outlived expectations by about 237 years");
   });
 });
