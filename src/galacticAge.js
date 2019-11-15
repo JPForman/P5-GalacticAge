@@ -11,18 +11,21 @@ export class GalacticAge {
   earthLeft (earthAge) {
     let earthLeft = 80 - this.earthAge;
     if (earthLeft <= 0) {
-      return `You outlived expectations by ${Math.abs(earthLeft)} years`;
+      let earthNeg = Math.abs(earthLeft);
+      return "You outlived expectations by " + earthNeg + " years";
     } else {
       return earthLeft;
     }
   }
- 
-  mercuryLeft (earthAge) {
-    let mercuryLeft = (.24*80) - this.earthAge;
-      if (mercuryLeft <= 0) {
-        return `You outlived expectations by ${Math.abs(mercuryLeft)} years`;
-      } else {
-        return mercuryLeft;
-      }
+
+  mercuryLeft (mercuryAge) {
+    console.log(this.mercuryAge);
+    let mercuryLeft = (.24*80) - this.mercuryAge;
+    if (mercuryLeft <= 0) {
+      let mercuryNeg = Math.abs(mercuryLeft);
+      return "You outlived expectations by " + mercuryNeg + " years";
+    } else {
+      return mercuryLeft;
     }
   }
+}
