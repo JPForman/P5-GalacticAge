@@ -9,7 +9,7 @@ export class GalacticAge {
     this.jupiterAge = 11.86 * earthAge;
   }
 
-//Average lifespan estimated at 80yo earth time
+  //Average lifespan estimated at 80yo earth time
   earthLeft (earthAge) {
     let earthLeft = 80 - this.earthAge;
     if (earthLeft <= 0) {
