@@ -11,14 +11,20 @@
       <div class="subtitle">
         <h3>What age would you be on other plants?</h3>
       </div>
-      <form id="ageForm"
+      <form id="ageForm">
       <div class="form-group">
         <input type="text" class="form-control" id="ageInput" placeholder="enter age here">
       </div>
       <button type="submit" name="button">Submit Your Age!</button>
       </form>
-
-      </div>
+    </div>
+    <div class="ageReveal container">
+      <h3>On Earth You Are: <span id="earthOut"></span></h3>
+      <h3>On Mercury You Are: <span id="mercuryOut"></span></h3>
+      <h3>On Venus You Are: <span id="venusOut"></span></h3>
+      <h3>On Mars You Are: <span id="marsOut"></span></h3>
+      <h3>On Jupiter You Are: <span id="jupiterOut"></span></h3>
+      <button value="Refresh Page" onClick="window.location.reload();">Enter a different age!</button>
     </div>
   </body>
 </html>
