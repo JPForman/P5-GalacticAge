@@ -3,10 +3,10 @@
 export class GalacticAge {
   constructor(earthAge) {
     this.earthAge = earthAge;
-    this.mercuryAge = .24 * earthAge;
-    this.venusAge = .62 * earthAge;
-    this.marsAge = 1.88 * earthAge;
-    this.jupiterAge = 11.86 * earthAge;
+    this.mercuryAge = earthAge / .24;
+    this.venusAge = earthAge / .62;
+    this.marsAge = earthAge / 1.88;
+    this.jupiterAge = earthAge / 11.86;
   }
 
   //Average lifespan estimated at 80yo earth time
